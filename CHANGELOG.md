@@ -5,7 +5,7 @@ Following documentation guidelines available at:
 
 [0.0.1] - 2018-05-30
 ### Added
-- Yarn, Webpack, Babel/ES2015, Webpack-dev-server setup
+- Yarn, Webpack, Babel/ES2015, Webpack-dev-server setup, css-loader, style-loader, react react-dom
 - yarn: Webpack
 - file: ./webpack.config.js
 - file: ./package.json
@@ -17,6 +17,10 @@ Following documentation guidelines available at:
 - yarn: babel-loader
 - yarn: webpack-dev-server
 - yarn: webpack-cli
+- yarn: css-loader, style-loader
+- yarn: react, react-dom
+- file: .gitignore
+- gitignore: node_modules/
 
 ## [0.0.0] - 2018-05-30
 ### Added
