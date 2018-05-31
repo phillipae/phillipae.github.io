@@ -20,7 +20,12 @@ Following documentation guidelines available at:
 - yarn: css-loader, style-loader
 - yarn: react, react-dom
 - file: .gitignore
-- gitignore: node_modules/
+- gitignore: node_modules/, yarn-error.log, yarn.lock (s/o https://stackoverflow.com/questions/42592168/should-i-add-yarn-error-log-to-my-gitignore-file)
+- refactor: delete original index.html, move source code into dist/ and src/
+- 
+
+### Changed
+- git ignore node_modules, 
 
 ## [0.0.0] - 2018-05-30
 ### Added
