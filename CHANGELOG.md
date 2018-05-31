@@ -3,6 +3,10 @@ Following documentation guidelines available at:
 * https://keepachangelog.com/en/0.3.0/
 * http://semver.org/spec/v2.0.0.html
 
+[1.0.0] - 2018-05-31
+### Added
+- Config for deploying via source branch
+
 [0.0.1] - 2018-05-30
 ### Added
 - Yarn, Webpack, Babel/ES2015, Webpack-dev-server setup, css-loader, style-loader, react react-dom
