@@ -7,4 +7,4 @@ Following documentation guidelines available at:
 ### Added
 - README
 - CHANGELOG
-
+- Initial homepage placeholder text
