@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/Espinoza/.nvm/versions/node/v8.2.1/bin/node /usr/local/Cellar/yarn/1.5.1/libexec/bin/yarn.js deploy
+  /Users/Espinoza/.nvm/versions/node/v8.2.1/bin/node /usr/local/Cellar/yarn/1.5.1/libexec/bin/yarn.js build
 
 PATH: 
   /Users/Espinoza/.nvm/versions/node/v8.2.1/bin:/Users/Espinoza/.rbenv/shims:/Users/Espinoza/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Espinoza/java
@@ -21,9 +21,10 @@ npm manifest:
     "main": "index.js",
     "repository": "https://github.com/phillipae/phillipae.github.io.git",
     "author": "Phillip Espinoza",
-    "homepage": "https://github.com/keslert/app-name",
+    "homepage": "https://phillipae.github.io/phillipae.github.io",
     "scripts": {
       "start": "webpack-dev-server",
+      "predeploy": "yarn run build",
       "deploy": "yarn run build && gh-pages -d build"
     },
     "license": "MIT",
@@ -6310,17 +6311,14 @@ Lockfile:
       yeoman-environment "^2.0.5"
 
 Trace: 
-  Error: Command failed.
-  Exit code: 1
-  Command: sh
-  Arguments: -c yarn run build && gh-pages -d build
-  Directory: /Users/Espinoza/syv/phillipae.github.io
-  Output:
-  
-      at ProcessTermError.MessageError (/usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:186:110)
-      at new ProcessTermError (/usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:226:113)
-      at ChildProcess.<anonymous> (/usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:30281:17)
-      at emitTwo (events.js:125:13)
-      at ChildProcess.emit (events.js:213:7)
-      at maybeClose (internal/child_process.js:921:16)
-      at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+  Error: Command "build" not found.
+      at new MessageError (/usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:186:110)
+      at /usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:87307:17
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:98:30)
+      at /usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:116:14
+      at Promise (<anonymous>)
+      at F (/usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:23451:28)
+      at /usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:95:12
+      at runCommand (/usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:87312:22)
+      at Object.<anonymous> (/usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:87412:14)
